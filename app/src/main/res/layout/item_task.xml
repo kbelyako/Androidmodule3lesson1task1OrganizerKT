@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clTaskItemRootView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivNewsPicture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cat2" />
+
+    <TextView
+        android:id="@+id/tvTaskTitle"
+        android:layout_width="233dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Удивленный кот Федя из Ростова стал звездой соцсетей"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/ivNewsPicture"
+        app:layout_constraintTop_toTopOf="@+id/ivNewsPicture" />
+
+    <TextView
+        android:id="@+id/tvTaskDescription"
+        android:layout_width="378dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:text='РОСТОВ-НА-ДОНУ, 24 июн – РИА Новости, Юлия Насулина. Домашний кот Федя из Ростовской области с вечно удивленными глазами стал героем десятка публикаций в зарубежных СМИ и продолжает набирать популярность в соцсетях, рассказала РИА Новости хозяйка животного Наталья Жданова. По ее словам, несколько лет назад к ним во двор пришла кошка, по виду напоминающая породу "шотландская вислоухая", и осталась у них жить. Позже она родила двух котят, одного из которых они решили оставить. "Он с рождения был слабеньким, были проблемы с координацией, аллергия. Мы его еле откачали. И вот из этого котика и вырос наш Федя", - сказала Жданова.'
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ivNewsPicture"
+        app:layout_constraintTop_toBottomOf="@+id/ivNewsPicture" />
+
+    <ImageView
+        android:id="@+id/ivLike"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/tvTaskTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvTaskTitle"
+        app:srcCompat="@drawable/like" />
+
+    <TextView
+        android:id="@+id/tvLikesNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/ivLike"
+        app:layout_constraintStart_toEndOf="@+id/tvTaskTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvTaskTitle" />
+
+    <ImageView
+        android:id="@+id/ivDislike"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        app:layout_constraintStart_toEndOf="@+id/ivLike"
+        app:layout_constraintTop_toTopOf="@+id/ivLike"
+        app:srcCompat="@drawable/dislike" />
+</androidx.constraintlayout.widget.ConstraintLayout>
