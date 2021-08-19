@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.fragment_list.*
 import kotlinx.android.synthetic.main.fragment_list_th.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -72,6 +73,18 @@ class ListFragmentTH : Fragment(), TaskItemCallback {
                     .commit()
             }
         }
+/*
+        bt_clearAll.setOnClickListener {
+            if (activity != null){
+        //  if  (dbThread.taskDao!=null){
+        //      dbThread.taskDao?.clear()
+        //  }
+            Log.d("mylog","DbCleared")
+        }
+        }
+
+ */
+
         super.onViewCreated(view, savedInstanceState)
     }
 

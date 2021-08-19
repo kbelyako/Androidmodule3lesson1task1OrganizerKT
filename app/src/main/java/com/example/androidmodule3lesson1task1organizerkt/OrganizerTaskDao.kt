@@ -1,5 +1,6 @@
 package com.example.androidmodule3lesson1task1organizerkt
 
+import androidx.lifecycle.LiveData
 import androidx.room.*
 
 
@@ -7,6 +8,7 @@ import androidx.room.*
 interface OrganizerTaskDao {
 
     @Query("SELECT * FROM tasks_table")
+    //fun getAll(): LiveData<List<OrganizerTask>>
     fun getAll(): List<OrganizerTask>
 
     @Query("SELECT * FROM tasks_table WHERE uid IN (:userIds)")

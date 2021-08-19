@@ -9,6 +9,8 @@ package com.example.androidmodule3lesson1task1organizerkt
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import androidx.lifecycle.LiveData
 import kotlinx.android.synthetic.main.activity_main1.*
 
 class MainActivity : AppCompatActivity() {
@@ -17,9 +19,24 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main1)
        // DataBaseThread()
         val dbThread:DataBaseThread=DataBaseThread()
-        val task2=OrganizerTask(0,"go to shop","buy yogurt")
+       // val alTasks:LiveData<List<OrganizerTask>>
+        val allTasks:List<OrganizerTask>
+       // dbThread.run()
+       // alTasks = dbThread.taskDao?.getAll()!!
+       //allTasks=dbThread.getData()
+
+       // Log.d("mylog","size="+ alTasks.value?.size.toString())
+       // Log.d("mylog","sizeTask="+ allTasks.size)
 
 
+       // Thread {
+
+       // }.start()
+
+        //alTasks.size
+
+        //  Thread {
+        //   alTasks=dbThread.taskDao?.getAll()!!
 
               /*dbThread.taskDao?.clear()
               //Do your database´s operations here
